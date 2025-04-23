@@ -66,5 +66,8 @@ public class Vaisseau : MonoBehaviour
     private void OnDestroy()
     {
         Instantiate(fxExplosion, transform.position, transform.rotation);
+        jeu.TraiterDefaite();  
     }
 }
+
+
